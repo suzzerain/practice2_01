@@ -36,18 +36,11 @@ void addProfile(Profile* students){
     cin.clear();
     cout << "Enter gender(0 - Female 1 - Male):\n";
     cin >> student.sex;
-//    while(student.sex!=0 || student.sex!=1){cout<<"\nerror\n";cin>>student.sex;}
-//    while (!(cin >> student.sex)) {
-//        cout << "error, expecting a num value\n";
-//        cin.clear();
-//        fflush(stdin);
-//    }
+
     cout << "Enter number of group:\n";
     cin >> student.group;
-//    while(!(student.group >= 2000 && student.group <= 2999)){cout<<"\nerror\n";cin>>student.group;}
     cout << "Enter student id:\n";
     cin >> student.id;
-//    while(!(student.id >= 0 && student.id <= 29)){cout<<"\nerror\n";cin>>student.id;}
     cout << "Enter grades of student:\n";
     for (int i=0; i<8;i++){
         cin >> student.grades[i];
@@ -389,24 +382,6 @@ int main() {
     Profile students[40];
     readDatabase(students);
     int userChoice;
-    int loopMain;
-//    addProfile(students);
-//    cin >> loopMain;
-//    while(loopMain){
-//        cout <<"Choose the action:\n0 - Save and exit\n1 - Show all students\n2 - Add new record\n3 - Edit record\n4 - Get students of group"
-//               "\n5 - Show students ranking by marks\n6 - Show count of male/female students\n7 - Show separation by great/good/well marks\n8 - Show students by group id\n";
-//    cin >> userChoice;
-//    if(userChoice==0){
-//        saveData(students);
-//        break;
-//    }
-//    if(userChoice==1){
-//        getStudents(students);
-//    }
-//    if(userChoice==2){
-//        addProfile(students);
-//    }
-//    }
     while(true){
         cout <<"Choose the action:\n0 - Save and exit\n1 - Show all students\n2 - Add new record\n3 - Edit record\n4 - Get students of group"
                "\n5 - Show students ranking by marks\n6 - Show count of male/female students\n7 - Show separation by great/good/well marks\n8 - Show students by group id\n";
